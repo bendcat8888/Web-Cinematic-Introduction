@@ -1,0 +1,17 @@
+{
+  "events": [
+    {
+      "id": "korea-2026-company-trip",
+      "title": "InnoGen Korea 2026 Company Trip",
+      "date": "2026-04-23 00:00:00",
+      "category": "events",
+      "categories": [
+        "events"
+      ],
+      "slug": "innogen-korea-2026-company-trip",
+      "image": "assets/events/Korea/Banner Korea 2026.jpg",
+      "excerpt": "After reaching the 2025 sales target, InnoGen Pharmaceuticals, Inc. is celebrating the achievement by giving employees a company trip to Korea in 2026.",
+      "html": "<p>InnoGen Pharmaceuticals, Inc. celebrates a meaningful milestone as the company reached its 2025 sales target. In recognition of the effort, commitment, and teamwork behind that success, the company is generously giving employees a travel trip outside the country.</p><p>The destination is Korea for the 2026 company trip, a special opportunity for the InnoGen team to enjoy new experiences together beyond the workplace.</p><p>This event reflects more than a reward. It is a celebration of shared achievement, gratitude, and the people who continue to help move the company forward.</p>"
+    }
+  ]
+}

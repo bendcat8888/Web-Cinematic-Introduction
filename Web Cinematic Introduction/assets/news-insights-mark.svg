@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">News and insights mark</title>
+  <desc id="desc">A calm pharmaceutical news emblem with a megaphone, editorial page, and soft medical cross accents.</desc>
+  <defs>
+    <radialGradient id="bg" cx="36%" cy="22%" r="78%">
+      <stop offset="0%" stop-color="#f4f8ff" stop-opacity="0.24"/>
+      <stop offset="48%" stop-color="#d8e6ff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#cfc9ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="82" y1="90" x2="558" y2="404" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4f8ff"/>
+      <stop offset="0.48" stop-color="#d8e6ff"/>
+      <stop offset="1" stop-color="#cfc9ff"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="146" y1="145" x2="504" y2="362" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#69e7f2" stop-opacity="0.70"/>
+      <stop offset="1" stop-color="#cfc9ff" stop-opacity="0.68"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.88  0 0 0 0 1  0 0 0 0.34 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="640" height="480" rx="36" fill="#070c1b"/>
+  <rect width="640" height="480" rx="36" fill="url(#bg)"/>
+  <g opacity="0.34" fill="none" stroke="#f4f8ff" stroke-width="1.4">
+    <path d="M94 118h118m68 0h118m68 0h82"/>
+    <path d="M104 386h136m72 0h128m48 0h54"/>
+    <circle cx="128" cy="182" r="4" fill="#f4f8ff" stroke="none"/>
+    <circle cx="514" cy="150" r="3.5" fill="#d8e6ff" stroke="none"/>
+    <circle cx="476" cy="330" r="3" fill="#cfc9ff" stroke="none"/>
+  </g>
+
+  <g filter="url(#softGlow)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M232 172h224c18 0 32 14 32 32v146c0 36 22 58 56 58H294c-38 0-62-25-62-63V172Z" fill="rgba(244,248,255,0.055)" stroke="url(#stroke)" stroke-width="8"/>
+    <path d="M488 350h56v0c0 32-14 58-50 58" stroke="url(#stroke)" stroke-width="8"/>
+    <path d="M280 230h112M280 274h146M280 318h146M280 362h122" stroke="url(#cyan)" stroke-width="10"/>
+    <path d="M154 256l98-34v134l-98-34V256Z" fill="rgba(105,231,242,0.10)" stroke="url(#stroke)" stroke-width="8"/>
+    <rect x="76" y="236" width="78" height="106" rx="12" fill="rgba(244,248,255,0.060)" stroke="url(#stroke)" stroke-width="8"/>
+    <path d="M76 270H44v38h32" stroke="url(#stroke)" stroke-width="8"/>
+    <path d="M112 342l28 72H96l-16-72" stroke="url(#stroke)" stroke-width="8"/>
+    <path d="M252 214v150" stroke="url(#stroke)" stroke-width="18"/>
+    <path d="M108 288h7M132 288h7M100 320h34" stroke="url(#cyan)" stroke-width="8"/>
+  </g>
+
+  <text x="282" y="224" fill="#f4f8ff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" letter-spacing="2">NEWS</text>
+
+  <g fill="none" stroke="url(#cyan)" stroke-linecap="round" stroke-width="8" opacity="0.78">
+    <path d="M154 106v42M133 127h42"/>
+    <path d="M514 92v38M495 111h38"/>
+    <path d="M548 218v34M531 235h34"/>
+    <path d="M86 142v34M69 159h34"/>
+  </g>
+</svg>

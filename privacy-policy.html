@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | InnoGen Pharmaceuticals</title>
+  <meta name="description" content="InnoGen Pharmaceuticals Inc. privacy policy and data privacy notice.">
+  <meta name="theme-color" content="#0B0D18">
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <style>
+    :root{
+      --bg0:#0B0D18;
+      --bg1:#14182B;
+      --ink:#F6F7FB;
+      --copy:rgba(246,247,251,0.76);
+      --muted:#C7B8FF;
+      --line:rgba(199,184,255,0.18);
+      --panel:rgba(244,248,255,0.060);
+      --panel-strong:rgba(244,248,255,0.086);
+      --shadow:0 26px 82px rgba(7,10,24,0.40);
+      --heading:linear-gradient(90deg,#F6F7FB 0%,#C7B8FF 48%,#C7B8FF 100%);
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--ink);
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:
+        radial-gradient(1180px 760px at 70% 8%, rgba(199,184,255,0.12), transparent 58%),
+        radial-gradient(860px 620px at 18% 70%, rgba(124,77,255,0.075), transparent 62%),
+        linear-gradient(180deg,var(--bg1),var(--bg0));
+      line-height:1.65;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.34;
+      background-image:
+        linear-gradient(rgba(199,184,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(199,184,255,0.035) 1px, transparent 1px);
+      background-size:42px 42px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.9), transparent 86%);
+    }
+
+    a{ color:rgba(246,247,251,0.88); text-decoration:none; border-bottom:1px solid rgba(199,184,255,0.24); }
+    a:hover{ color:#fff; border-color:rgba(199,184,255,0.62); }
+    :focus-visible{ outline:3px solid rgba(199,184,255,0.38); outline-offset:4px; border-radius:10px; }
+
+    .skip-link{
+      position:absolute;
+      left:-999px;
+      top:14px;
+      padding:10px 14px;
+      border-radius:12px;
+      background:rgba(244,248,255,0.96);
+      color:#14182B;
+      z-index:20;
+    }
+    .skip-link:focus{ left:14px; }
+
+    .shell{
+      position:relative;
+      width:min(1120px, calc(100% - 32px));
+      margin:0 auto;
+      padding:24px 0 44px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding:14px 16px;
+      border:1px solid rgba(199,184,255,0.13);
+      border-radius:999px;
+      background:rgba(15,18,32,0.58);
+      backdrop-filter:blur(18px) saturate(1.04);
+      box-shadow:0 18px 60px rgba(0,0,0,0.36), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width:0;
+    }
+
+    .brand-logo{
+      width:118px;
+      height:54px;
+      display:grid;
+      place-items:center;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.66);
+      background:
+        radial-gradient(120px 58px at 28% 18%, rgba(255,255,255,0.98), rgba(255,255,255,0.74) 62%, rgba(238,232,255,0.68));
+      box-shadow:0 14px 34px rgba(7,10,24,0.32), 0 0 22px rgba(199,184,255,0.08), inset 0 1px 0 rgba(255,255,255,0.94);
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+
+    .brand-logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      padding:7px 10px;
+      display:block;
+    }
+
+    .brand-copy{
+      min-width:0;
+      display:grid;
+      gap:2px;
+    }
+    .brand-copy strong{ font-size:14px; line-height:1.2; color:rgba(246,247,251,0.94); }
+    .brand-copy span{ font-size:12px; color:rgba(199,184,255,0.72); }
+
+    .back-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:42px;
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid rgba(199,184,255,0.20);
+      background:linear-gradient(180deg, rgba(244,248,255,0.075), rgba(199,184,255,0.035));
+      color:rgba(246,247,251,0.88);
+      box-shadow:0 12px 34px rgba(7,10,24,0.22), inset 0 1px 0 rgba(255,255,255,0.08);
+      white-space:nowrap;
+    }
+
+    .hero{
+      margin-top:34px;
+      padding:clamp(32px, 6vw, 72px);
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        radial-gradient(860px 320px at 18% 0%, rgba(244,248,255,0.10), transparent 66%),
+        radial-gradient(720px 360px at 90% 16%, rgba(199,184,255,0.12), transparent 68%),
+        linear-gradient(180deg, var(--panel-strong), var(--panel));
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(16px) saturate(1.03);
+    }
+
+    .kicker{
+      margin:0 0 16px;
+      color:rgba(199,184,255,0.86);
+      font-size:13px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      font-weight:720;
+    }
+
+    h1{
+      margin:0;
+      max-width:820px;
+      font-size:clamp(38px, 7vw, 78px);
+      line-height:1.02;
+      letter-spacing:-.03em;
+      background:var(--heading);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      margin:22px 0 0;
+      max-width:74ch;
+      color:var(--copy);
+      font-size:clamp(16px, 2vw, 20px);
+    }
+
+    .pills{
+      margin-top:24px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .pill{
+      padding:9px 13px;
+      border:1px solid rgba(199,184,255,0.18);
+      border-radius:999px;
+      color:rgba(246,247,251,0.78);
+      background:rgba(244,248,255,0.055);
+      font-size:13px;
+    }
+
+    .layout{
+      margin-top:24px;
+      display:grid;
+      grid-template-columns:280px minmax(0,1fr);
+      gap:20px;
+      align-items:start;
+    }
+
+    .toc{
+      position:sticky;
+      top:18px;
+      padding:16px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(15,18,32,0.62);
+      backdrop-filter:blur(16px);
+      box-shadow:0 14px 46px rgba(7,10,24,0.28);
+    }
+    .toc h2{
+      margin:0 0 10px;
+      color:rgba(199,184,255,0.84);
+      font-size:12px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .toc nav{ display:grid; gap:4px; }
+    .toc a{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      padding:9px 10px;
+      border:1px solid transparent;
+      border-radius:10px;
+      color:rgba(246,247,251,0.74);
+      background:transparent;
+      font-size:13px;
+    }
+    .toc a:hover{
+      text-decoration:none;
+      background:rgba(244,248,255,0.055);
+      border-color:rgba(199,184,255,0.14);
+    }
+    .toc span{ color:rgba(199,184,255,0.58); }
+
+    main{
+      display:grid;
+      gap:16px;
+    }
+
+    .section{
+      padding:24px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(244,248,255,0.070), rgba(199,184,255,0.034));
+      box-shadow:0 16px 44px rgba(7,10,24,0.24);
+    }
+    .section.callout{
+      background:
+        radial-gradient(460px 180px at 16% 0%, rgba(199,184,255,0.12), transparent 68%),
+        linear-gradient(180deg, rgba(244,248,255,0.082), rgba(199,184,255,0.040));
+    }
+    .label{
+      margin-bottom:8px;
+      color:rgba(199,184,255,0.86);
+      font-size:12px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-weight:740;
+    }
+    h2{
+      margin:0 0 10px;
+      color:rgba(246,247,251,0.94);
+      font-size:clamp(20px, 2.6vw, 30px);
+      line-height:1.2;
+      letter-spacing:-.01em;
+    }
+    p{ margin:0; color:var(--copy); }
+    p + p{ margin-top:12px; }
+    ul{ margin:12px 0 0; padding-left:20px; color:var(--copy); }
+    li + li{ margin-top:7px; }
+    strong{ color:rgba(246,247,251,0.94); }
+    .highlight-box{
+      margin-top:12px;
+      padding:16px;
+      border-radius:14px;
+      border:1px solid rgba(199,184,255,0.18);
+      background:rgba(11,13,24,0.30);
+    }
+
+    .contact-card{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+    .contact-info{
+      color:var(--copy);
+    }
+
+    .page-footer{
+      margin-top:24px;
+      padding:22px;
+      text-align:center;
+      color:rgba(246,247,251,0.56);
+      font-size:13px;
+    }
+
+    @media (max-width:820px){
+      .shell{ width:min(100% - 24px, 1120px); padding-top:14px; }
+      .topbar{ border-radius:24px; align-items:flex-start; }
+      .brand-logo{ width:112px; height:52px; }
+      .brand-copy{ display:none; }
+      .layout{ grid-template-columns:1fr; }
+      .toc{ position:relative; top:auto; }
+      .contact-card{ grid-template-columns:1fr; }
+    }
+
+    @media (max-width:520px){
+      .topbar{ padding:12px; }
+      .back-link{ min-height:38px; padding:8px 12px; font-size:13px; }
+      .hero{ padding:28px 20px; border-radius:22px; }
+      .section{ padding:20px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="shell">
+    <header class="topbar" aria-label="Page header">
+      <a class="brand" href="index.html" aria-label="Back to InnoGen home">
+        <span class="brand-logo"><img src="assets/InnogenLogo.png?v=20260522-premium-capsule" alt="InnoGen Pharmaceuticals Inc."></span>
+        <span class="brand-copy"><strong>InnoGen Pharmaceuticals Inc.</strong><span>Data privacy and protection</span></span>
+      </a>
+      <a class="back-link" href="index.html#contact">Back to site</a>
+    </header>
+
+    <section class="hero" aria-label="Page introduction">
+      <p class="kicker">Privacy Policy</p>
+      <h1>Data Privacy Notice & Consent</h1>
+      <p>We protect the privacy and security of the personal information you share with us. This notice describes what we collect, why we collect it, how we use it, and how you can contact us about privacy-related requests.</p>
+      <div class="pills" aria-label="Key privacy points">
+        <span class="pill">No data selling</span>
+        <span class="pill">Purpose-based use</span>
+        <span class="pill">Limited retention</span>
+      </div>
+    </section>
+
+    <div class="layout">
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <nav>
+          <a href="#what-we-collect">What we collect <span>Details</span></a>
+          <a href="#purpose">Purpose <span>Why</span></a>
+          <a href="#legitimate-interests">Legitimate interests <span>Use</span></a>
+          <a href="#limitations">Limitations <span>Boundaries</span></a>
+          <a href="#sharing">Sharing <span>Disclosure</span></a>
+          <a href="#retention">Retention <span>Timeline</span></a>
+          <a href="#rights">Your rights <span>Control</span></a>
+          <a href="#consent">Consent <span>Notice</span></a>
+          <a href="#contact">Contact <span>DPO</span></a>
+        </nav>
+      </aside>
+
+      <main id="content" aria-label="Data privacy notice content">
+        <section class="section callout" aria-label="Summary">
+          <div class="label">Summary</div>
+          <p>We collect only what is needed for registration, communication, and event or service management. We keep information for a limited time and do not use it for unrelated recurring marketing unless you explicitly opt in separately.</p>
+        </section>
+
+        <section id="what-we-collect" class="section">
+          <h2>What we collect</h2>
+          <p>Depending on the form, event, service, or inquiry, we may collect personal and professional details such as:</p>
+          <ul>
+            <li>Full name</li>
+            <li>Contact details, including email address and phone number</li>
+            <li>Medical specialty or professional role, when relevant</li>
+            <li>Hospital, institution, company, or organization affiliation</li>
+            <li>Signature, attendance, or registration details, when required</li>
+          </ul>
+        </section>
+
+        <section id="purpose" class="section">
+          <h2>Purpose of collection</h2>
+          <p>We collect personal information for legitimate and necessary business purposes, including registration, event management, customer support, communication, compliance, and record keeping. Your data allows us to:</p>
+          <ul>
+            <li>Maintain accurate records of attendees, customers, partners, or requestors.</li>
+            <li>Verify identity, professional credentials, or affiliation where applicable.</li>
+            <li>Log attendance or participation for professional credit, where applicable.</li>
+            <li>Respond to inquiries, provide requested materials, or send short-term follow-up communications.</li>
+          </ul>
+        </section>
+
+        <section id="legitimate-interests" class="section">
+          <h2>Legitimate interests</h2>
+          <p>We may use professional or inquiry-related information to improve InnoGen Pharmaceuticals Inc. events, services, customer support, and communication practices. Where possible, we use aggregated or anonymized information to understand audience needs and improve future activities.</p>
+        </section>
+
+        <section id="limitations" class="section">
+          <h2>Use of information & limitations</h2>
+          <div class="highlight-box" role="note" aria-label="Limitations">
+            <p><strong>We will not:</strong></p>
+            <ul>
+              <li>Sell your personal information to third parties.</li>
+              <li>Use event or inquiry information for unrelated recurring marketing unless you explicitly opt in separately.</li>
+              <li>Contact you for unrelated purposes once the event, inquiry, or short-term follow-up is concluded.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="sharing" class="section">
+          <h2>Sharing & disclosure</h2>
+          <p>We do not share your information outside InnoGen Pharmaceuticals Inc. except when needed for the purpose you provided it, when you have given consent, when trusted service providers support our operations under appropriate safeguards, or when required by law, regulation, or a lawful government request.</p>
+        </section>
+
+        <section id="retention" class="section">
+          <h2>Data retention</h2>
+          <p>We keep personal data only as long as necessary for the purposes described in this notice, unless a longer period is required by law, regulation, audit, dispute resolution, or legitimate business need. Event records are typically retained for one year, after which they are securely destroyed, archived, or anonymized as appropriate.</p>
+        </section>
+
+        <section id="rights" class="section">
+          <h2>Your rights</h2>
+          <p>Under the Data Privacy Act, you have rights regarding your personal information. These may include the right to request access, request correction, object to certain processing, request erasure or blocking, and raise privacy-related concerns with us.</p>
+        </section>
+
+        <section id="consent" class="section">
+          <h2>Consent</h2>
+          <p>By submitting a form, registering for an event, sending an inquiry, or otherwise providing personal information to InnoGen Pharmaceuticals Inc., you acknowledge that you have read and understood this notice and consent to the collection and processing of your information for the purposes described above.</p>
+        </section>
+
+        <section id="contact" class="section">
+          <h2>Questions or requests?</h2>
+          <div class="contact-card">
+            <div class="contact-info">
+              <p><strong>Data Protection Officer</strong></p>
+              <p>InnoGen Pharmaceuticals Inc.<br>124 - 126 Scout Dr. Lazcano St., Brgy. Sacred Heart, Quezon City, Philippines<br>Tel: <a href="tel:+63289912600">(02) 8991 2600</a><br>Email: <a href="mailto:dpo@innogen-pharma.com">dpo@innogen-pharma.com</a></p>
+            </div>
+            <div class="contact-info">
+              <p><strong>Policy note</strong></p>
+              <p>This page is intended to explain InnoGen's privacy practices in a clear, readable format. For official requests, please contact the Data Protection Officer using the details provided here.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="page-footer">
+      <div>Copyright 2026 InnoGen Pharmaceuticals, Inc. Quezon City, Metro Manila, Philippines</div>
+    </footer>
+  </div>
+</body>
+</html>
